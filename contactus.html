@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512..." crossorigin="anonymous" />
+
+    <title>Contact Us</title>
+    <style>
+
+        *{
+            margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color:brown;
+        color: black;
+
+        }
+        
+
+        #logo {
+        width: 30%;
+        height: 10%;
+        margin: 3% 0% 3% 3%;
+        border-radius: 5%;
+        background-color: rgb(111, 111, 216);;
+
+      }
+      .navbar {
+        display: flex;
+        background-color: brown;
+        width: 100%;
+        
+        
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data {
+        background-color: brown;
+        margin-top: 5%;
+        width: 70%;
+        background-color: rgb(111, 111, 216);
+      }
+      ul {
+        list-style: none;
+        height: 100px;
+        background-color: brown;
+        background-color: rgb(111, 111, 216);
+      }
+      #nav-data li {
+    
+
+    
+        text-align: center;
+
+        cursor: pointer;
+        
+        font-size: large;
+        font-weight: 600;
+        background-color: rgb(111, 111, 216);
+       
+        color: black;
+        border-radius: 5%;
+        transition: background-color 0.7s ease;
+
+      }
+      #nav-data li:hover{
+        background-color: rgb(78, 35, 37);
+      }
+      #nav-data ul {
+        list-style: none;
+        display: flex;
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data li {
+        justify-content: space-evenly;
+        margin-left:8%;
+        color: white;
+        background-color:rgb(111, 111, 216);
+      }
+
+.fullform{
+    border: 1px solid black;
+   
+    width: 80%;
+    height: fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+            
+    background-color: rgb(27, 216, 204);
+    color: white;
+}
+
+form{
+    margin-left: 20%;
+    margin-top: 3%;
+    color: white;
+    background-color: rgb(27, 216, 204);
+}
+
+
+.footer {
+        margin-top: 3%;
+        display: flex;
+        justify-content:space-evenly ;
+        background-color:rgb(111, 111, 216);
+        color: white;
+      }
+      .footer li{
+        width: fit-content;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      }
+     .footer i{
+        margin-top: 3%;
+        margin-right: 5%;
+        background-color: rgb(111, 111, 216);
+        color: whitesmoke;
+        
+      } 
+      .footer ul{
+        background-color: rgb(111, 111, 216);
+      }   
+      
+      #contact{
+        margin-top: 3%;
+        margin-left: 3%;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      } 
+      #quicklinks{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      color: white;
+
+      }
+      #quicklinks li{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      }
+
+      @keyframes wavering{
+        0% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+            100% { transform: rotate(-2deg); }
+      }
+      .contact{
+        margin-top: 3%;
+        text-align: center;
+        margin-bottom: 3%;
+        background: linear-gradient(to right,rgb(170, 255, 0), white);
+                  -webkit-background-clip: text;
+                  color: transparent;
+        animation: wavering 1s infinite;
+      }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="full-data">
+<!-- nav-bar -->
+<div class="navbar">
+    <div id="logo"> 
+        <img src="./logo.png" id="logo" alt="logo"> 
+        
+    </div>
+    <div id="nav-data">
+        <ul>
+            <li onclick="gotohome()">Home</li>
+            <li onclick="gotocontactus()">Contact Us</li>
+            <li onclick="gotoaboutus()">About Us</li>
+            <li onclick="gotoourteachers()">Our Teachers</li>
+        </ul>
+    </div>
+</div>
+<!-- main-data -->
+       
+            <h2 class="contact" margin-top: 3%;text-align: center;margin-bottom: 3%;background: linear-gradient(to right,rgb(170, 255, 0), white);
+            -webkit-background-clip: text;
+            color: transparent;>Contact Us&nbsp;<i class="fas fa-envelope"  style="color: pink;"></i>
+</h2>
+        <div class="fullform">
+            <form action="" method="">
+            
+                    <input type="text" name="name" placeholder="name" required>
+                    <label for="name"> : Name</label><br>
+                
+                
+    
+                    <input type="tel" name="mobile"  placeholder="mobile" required>
+                    <label for="mobile"> : Mobile</label><br>
+                
+
+    
+                    <input type="email" name="e-mail" placeholder="e-mail" required>
+                    <label for="e-mail"> : e-mail</label><br>
+                
+
+                
+                    <textarea name="message"  rows="5" placeholder="Message" required></textarea>
+                    <label for="message"> : Message</label><br>
+                
+
+                <div class="button-div" style="background-color: rgb(27, 216, 204);">
+                    <button type="submit" style="color: white;">Send</button>
+                </div>
+            </form>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+          <div id="quicklinks">
+          <h3 style="font-size: larger;color: rgb(189, 208, 215);background-color: rgb(111, 111, 216);color: black;font-weight: 900;font-size: x-large;margin-bottom: 5%;">Quick links</h3>
+          <ul>
+            <li onclick="gotohome()" style="margin-top: 3%">Home</li>
+            <li onclick="gotocontactus()">Contact Us</li>
+            <li onclick="gotoaboutus()">About Us</li>
+            <li>Gallery</li>
+            <li>more</li>
+          </ul>
+          
+        </div>
+        <div id="contact">
+          <i class="fas fa-map-marker-alt"></i>Dronacharya Group Of Institution Greater Noida
+          <br><i class="fas fa-mobile" ></i>+91 9027938948<br>
+          <i class="fas fa-envelope "></i>bishtdipanshu321@gmail.com
+  
+  
+  
+        </div>
+      </div>
+      <div style="background-color: rgb(111, 111, 216);">
+      <p style="background-color: rgb(111, 111, 216);color: white; margin-left: 2%;">
+        <br>
+        <br>
+        &copy; 2023 Dipanshu Bisht. All rights reserved. DGI space
+      </p>
+    </div>
+        </div>
+<script>
+    function gotohome() {
+        window.location.href='./home.html';
+        return false;
+      }
+      function gotoaboutus(){
+           window.location.href='./aboutus.html';
+           return false;
+        }
+        function gotocontactus(){
+            window.location.href='./contactus.html';
+            return false;
+        }
+        function gotoourteachers() {
+          window.location.href='./ourteachers.html';
+          return false;
+          }
+</script>
+    
+</body>
+</html>

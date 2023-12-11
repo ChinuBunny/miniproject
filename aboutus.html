@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512..." crossorigin="anonymous" />
+
+    <title>About Us</title>
+    <style>
+        *{
+            margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: brown;
+        color: black;
+    }
+    .full-data{
+        width: 100%;
+        height: fit-content;
+        border: 1px solid black;
+    }
+
+    
+    #logo {
+        width: 30%;
+        height: 10%;
+        margin: 3% 0% 3% 3%;
+        border-radius: 5%;
+        background-color: rgb(111, 111, 216);;
+
+      }
+      .navbar {
+        display: flex;
+        background-color: brown;
+        width: 100%;
+        
+        
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data {
+        background-color: brown;
+        margin-top: 5%;
+        width: 70%;
+        background-color: rgb(111, 111, 216);
+      }
+      ul {
+        list-style: none;
+        height: 100px;
+        background-color: brown;
+        background-color: rgb(111, 111, 216);
+      }
+      #nav-data li {
+    
+
+    
+        text-align: center;
+
+        cursor: pointer;
+        
+        font-size: large;
+        font-weight: 600;
+        background-color: rgb(111, 111, 216);
+       
+        color: black;
+        border-radius: 5%;
+        transition: background-color 0.7s ease;
+
+      }
+      #nav-data li:hover{
+        background-color: rgb(78, 35, 37);
+      }
+      #nav-data ul {
+        list-style: none;
+        display: flex;
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data li {
+        justify-content: space-evenly;
+        margin-left:8%;
+        color: white;
+        background-color:rgb(111, 111, 216);
+      }
+    #my-image{
+        margin-top: 10%;
+        text-align: center;
+        background-image: url('./Best-Engineering-College-in-Delhi-NCR.jpg');
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50dvh;
+    }
+    #textforaboutus{
+       
+        width: 80%;
+        height: fit-content;
+        border: 1px solid yellowgreen;
+        text-align: center;
+        justify-content: center;
+      
+        align-items: center;
+        margin: 5% 10%;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #ourvisionandmission{
+        width: 50%;
+        height: fit-content;
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 27%;
+    }
+    #motivationbehindtheproject{
+        width: 50%;
+        height: fit-content;
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 27%;
+    }
+    
+    .footer {
+        margin-top: 3%;
+        display: flex;
+        justify-content:space-evenly ;
+        background-color:rgb(111, 111, 216);
+        color: white;
+      }
+      .footer li{
+        width: fit-content;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      }
+     .footer i{
+        margin-top: 3%;
+        margin-right: 5%;
+        background-color: rgb(111, 111, 216);
+        color: whitesmoke;
+        
+      } 
+      .footer ul{
+        background-color: rgb(111, 111, 216);
+      }   
+      
+      #contact{
+        margin-top: 3%;
+        margin-left: 3%;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      } 
+      #quicklinks{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      color: white;
+
+      }
+      #quicklinks li{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      }
+
+      
+        @keyframes wavering{
+        0% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+            100% { transform: rotate(-2deg); }
+      }
+      .heading{
+        margin-top: 3%;
+        text-align: center;
+        margin-bottom: 3%;
+        background: linear-gradient(to right,rgb(170, 255, 0), white);
+                  -webkit-background-clip: text;
+                  color: transparent;
+        animation: wavering 1s infinite;
+      }
+    
+
+
+    </style>
+    </head>
+    <body>
+    <div class="full-data">
+        <!-- navbar -->
+        <div class="navbar">
+            <div id="logo"> 
+                <img src="./logo.png" id="logo" alt="logo"> 
+                
+            </div>
+            <div id="nav-data">
+                <ul>
+                    <li onclick="gotohome()">Home</li>
+                    <li onclick="gotocontactus()">Contact Us</li>
+                    <li onclick="gotoaboutus()">About Us</li>
+                    <li onclick="gotoourteachers()">Our Teachers</li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- main data -->
+    <div class="main-data">
+
+      <h1 class="heading">About Us</h1>
+        
+        <div id="my-image"><img src="mine.jpg" alt="myimage" style="border-radius: 50% ;height: 100%; width: 50%;border-color: black;"></div>
+
+        <div id="textforaboutus">
+            
+          <p style="color: white; width: 100%;">  Welcome to DGI Space, a dedicated platform curated by Dipanshu Bisht, a passionate student and creator. As a CSE 3rd year student at Dronacharya Group Of Institution Greater Noida, I understand the challenges students face in accessing quality study materials. This website aims to bridge the gap by providing a centralized hub for academic resources.
+
+I have always been fascinated by the power of technology in enhancing the learning experience. With a love for coding and web development, I embarked on this journey to create a space where my fellow students can easily access notes, PDFs, video tutorials, and more. The Study Hub is not just a website; it's a project born out of my commitment to making education accessible and enjoyable.
+
+Explore the various sections to find a treasure trove of educational content. Whether you're preparing for exams, working on projects, or simply seeking to expand your knowledge, [Your College Name] Study Hub is here to support your academic journey.
+
+Thank you for joining me on this endeavor. Let's learn, grow, and succeed together!
+</p>
+        </div>
+
+
+        <div id="ourvisionandmission">
+            <h3>Mission</h3>
+           <p>The Study Hub envisions a collaborative space where students can seamlessly access a diverse range of educational materials. Our mission is to foster a supportive learning environment, providing tools that enhance the academic journey and contribute to the success of every student at [Your College Name].</p>
+        </div>
+
+        <div id="motivationbehindtheproject">
+            <h3>Motivation Behind the project</h3>
+            <p>The inspiration for the Study Hub emerged from my own experiences grappling with the challenges of accessing comprehensive study materials. Fueled by a desire to make the learning process more accessible and enjoyable, this project became a personal mission to empower my fellow students with a centralized platform for academic resources.</p>
+        </div>
+
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div id="quicklinks">
+      <h3 style="font-size: larger;color: rgb(189, 208, 215);background-color: rgb(111, 111, 216);color: black;font-weight: 900;font-size: x-large;margin-bottom: 5%;">Quick links</h3>
+      <ul>
+        <li onclick="gotohome()" style="margin-top: 3%">Home</li>
+        <li onclick="gotocontactus()">Contact Us</li>
+        <li onclick="gotoaboutus()">About Us</li>
+        <li>Gallery</li>
+        <li>more</li>
+      </ul>
+      
+    </div>
+    <div id="contact">
+      <i class="fas fa-map-marker-alt"></i>Dronacharya Group Of Institution Greater Noida
+      <br><i class="fas fa-mobile" ></i>+91 9027938948<br>
+      <i class="fas fa-envelope "></i>bishtdipanshu321@gmail.com
+
+
+
+    </div>
+  </div>
+  <div style="background-color: rgb(111, 111, 216);">
+  <p style="background-color: rgb(111, 111, 216);color: white; margin-left: 2%;">
+    <br>
+    <br>
+    &copy; 2023 Dipanshu Bisht. All rights reserved. DGI space
+  </p>
+</div>
+    </div>
+
+    <script>
+        function gotoaboutus(){
+        window.location.href='./aboutus.html';
+        return false;
+        }
+
+        function gotohome(){
+            window.location.href="./home.html";
+            return false;
+        }
+        function gotocontactus(){
+            window.location.href='./contactus.html';
+            return false;
+        }
+        function gotoourteachers(){
+          window.location.href='./ourteachers.html';
+          return false;
+        }
+    </script>
+
+</body>
+</html>

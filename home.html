@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512..." crossorigin="anonymous" />
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(43, 107, 117, 0.9);
+        background-color: brown;
+        color: black;
+      }
+      .full-data {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid white;
+        background-color: brown;
+
+      }
+
+      #logo {
+        width: 30%;
+        height: 10%;
+        margin: 3% 0% 3% 3%;
+        background-color: rgb(111, 111, 216);
+        border-radius: 5%;
+
+      }
+      .navbar {
+        display: flex;
+        background-color: brown;
+        width: 100%;
+        
+        
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data {
+        background-color: brown;
+        margin-top: 5%;
+        width: 70%;
+        background-color: rgb(111, 111, 216);
+      }
+      ul {
+        list-style: none;
+        height: 100px;
+        background-color: brown;
+        background-color: rgb(111, 111, 216);
+      }
+      #nav-data li {
+  
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+
+        cursor: pointer;
+        
+        font-size: large;
+        font-weight: 600;
+        background-color: rgb(111, 111, 216);
+       
+       
+        border-radius: 5%;
+        transition: background-color 0.7s ease;
+
+      }
+      #nav-data li:hover{
+        background-color: rgb(78, 35, 37);
+      }
+      #nav-data ul {
+        list-style: none;
+        display: flex;
+        background-color: rgb(111, 111, 216);
+        
+      }
+      #nav-data li {
+        justify-content: space-evenly;
+        margin-left:8%;
+        color: white;
+        background-color:rgb(111, 111, 216);
+      }
+
+      .main-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        background-color: brown;
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        
+      }
+      #firstyear {
+        border: 2px solid yellowgreen;
+        width: 50%;
+        height: 25px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        background-color: rgb(19, 19, 48);
+        transition: transform 0.9s ease;
+        animation: bounce 3s infinite;
+      }
+      #firstyear:hover{
+      transform: scale(1.1);
+      animation: none;
+      }
+      #secondyear {
+        border: 2px solid yellowgreen;
+        width: 80%;
+        height: 50px;
+        transition: transform 0.9s ease;
+        text-align: center;
+        cursor: pointer;
+        background-color: rgb(19, 19, 48);
+        animation: bounce 4s infinite;
+      }
+      #secondyear:hover{
+        transform: scale(1.1);
+        animation: none;
+      }
+   
+      #thirdyear {
+        border: 2px solid yellowgreen;
+        width: 80%;
+        height: 75px;
+        transition: transform 0.9s ease;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(19, 19, 48);
+        animation: bounce 5s infinite;
+        cursor: pointer;
+      }
+      #thirdyear:hover{
+        transform: scale(1.1);
+        animation: none;
+      }
+      #fourthyear {
+        border: 2px solid yellowgreen;
+        width: 80%;
+        height: 100px;
+        
+        text-align: center;
+        transition: transform 0.9s ease;
+        background-color: rgb(19, 19, 48);
+        animation: bounce 6s infinite;
+        cursor: pointer;
+        
+      }
+      #fourthyear:hover{
+        transform: scale(1.1);
+        animation: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(to right, #00ffea, #8fce11);
+            -webkit-background-clip: text;
+            color: transparent;
+      }
+
+      .middle-data {
+        margin-top: 5%;
+        background-color: brown;
+      }
+      #dynamic_change{
+        margin-left: 10%;
+        background-color: brown;
+      }
+
+      .footer {
+        margin-top: 3%;
+        display: flex;
+        justify-content:space-evenly ;
+        background-color:rgb(111, 111, 216);
+        color: white;
+      }
+      .footer li{
+        width: fit-content;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      }
+     .footer i{
+        margin-top: 3%;
+        margin-right: 5%;
+        background-color: rgb(111, 111, 216);
+        color: whitesmoke;
+        
+      } 
+      .footer ul{
+        background-color: rgb(111, 111, 216);
+      }   
+      
+      #contact{
+        margin-top: 3%;
+        margin-left: 3%;
+        color: white;
+        background-color: rgb(111, 111, 216);
+      } 
+      #quicklinks{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      color: white;
+
+      }
+      #quicklinks li{
+        margin-top: 2%;
+        background-color: rgb(111, 111, 216);
+      }
+
+
+      .word {
+  margin: auto;
+  color: white;
+  font: 500 normal 1.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+
+
+      
+    </style>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Home</title>
+  </head>
+  <bod>
+    <div class="full-data">
+      <!-- navbar -->
+      <div class="navbar">
+        <div id="logo">
+          <img src="./logo.png" id="logo" alt="logo" />
+        </div>
+        <div id="nav-data">
+          <ul>
+            <li onclick="gotohome()">Home</li>
+            <li onclick="gotocontactus()">Contact Us</li>
+            <li onclick="gotoaboutus()">About Us</li>
+            <li onclick="gotoourteachers()">Our Teachers</li>
+          </ul>
+        </div>
+      </div>
+      <!-- middle data -->
+      <img src="./Best-Engineering-College-in-Delhi-NCR.jpg" style="width: 100%;"  />
+      <div class="middle-data">
+        <p style="text-align: center; font-size: xx-large; font-weight: 500;color: white;">
+          Welcome
+        </p>
+        <hr
+          style="
+            width: 30%;
+            margin-left: 35%;
+            height: 5px;
+            background-color: yellowgreen;
+            color: yellowgreen;
+          "
+        />
+        <br>
+        <i style="margin-top: 3%;font-weight: 600; color: aqua;">
+          "Empowering Knowledge, Connecting Minds: Your One-Stop Hub for Collage
+          Resources!"
+        </i>
+        <br />
+        <h2 style="margin-left: 3%; margin-top: 2%;color:hotpink;">
+          We Provide -
+          <div class="word" style="margin-left: 10%;"></div>
+        </h2>
+      </div>
+      <!-- <div style="margin-top: 5%;"><img src="DGI.jpeg" style="width: 90%;height: 400px;margin-left:5%; margin-right: 5%;"></div>
+        -->
+      <h1
+        style="
+          margin-top: 10%;
+          align-items: center;
+          text-align: center;
+          background: linear-gradient(to right, #aeff00, #ffffff);
+            -webkit-background-clip:text;
+            color: transparent;
+        "
+      >
+        Choose Your Year
+      </h1>
+
+      <!-- main-data -->
+      <div class="main-data">
+        <div id="firstyear" onclick="gotofirstyearpage()">
+          <i class="fas fa-user" style="color: white;background: rgb(14, 14, 30);"></i>
+
+          <a href="firstyear/firstyear.html">First Year</a>
+        </div>
+        <div id="secondyear" onclick="gotosecondyearpage()">
+          <i class="fas fa-user" style="color: white;background: rgb(14, 14, 30);"></i><br>
+
+          <a href="secondyear/secondyear.html">Second Year</a>
+        </div>
+
+        <div id="thirdyear" onclick="gotothirdyearpage()">
+          <i class="fas fa-user" style="color: white;background: rgb(14, 14, 30);"></i>
+
+          <a href="thirdyear/thirdyear.html"><br>Third Year</a>
+        </div>
+        <div id="fourthyear" onclick="gotofourthyearpage()">
+          <i class="fas fa-user" style="color: white;background: rgb(14, 14, 30);"></i>
+
+          <a href="fourthyear/fourthyear.htm"><br><br>Fourth Year</a>
+        </div>
+      </div>
+<!-- footer -->
+      <div class="footer">
+        <div id="quicklinks">
+        <h3 style="font-size: larger;color: rgb(189, 208, 215);background-color: rgb(111, 111, 216);color: black;font-weight: 900;font-size: x-large;margin-bottom: 5%;">Quick links</h3>
+        <ul>
+          <li onclick="gotohome()" style="margin-top: 3%">Home</li>
+          <li onclick="gotocontactus()">Contact Us</li>
+          <li onclick="gotoaboutus()">About Us</li>
+          <li>Gallery</li>
+          <li>more</li>
+        </ul>
+        
+      </div>
+      <div id="contact">
+        <i class="fas fa-map-marker-alt"></i>Dronacharya Group Of Institution Greater Noida
+        <br><i class="fas fa-mobile" ></i>+91 9027938948<br>
+        <i class="fas fa-envelope "></i>bishtdipanshu321@gmail.com
+
+
+
+      </div>
+    </div>
+    <div style="background-color: rgb(111, 111, 216);">
+    <p style="background-color: rgb(111, 111, 216);color: white; margin-left: 2%;">
+      <br>
+      <br>
+      &copy; 2023 Dipanshu Bisht. All rights reserved. DGI space
+    </p>
+  </div>
+    </div>
+    <script>
+    
+
+      function gotofirstyearpage() {
+      window.location.href='firstyear/firstyear.html';
+      return false;
+       
+      }
+      function gotoourteachers(){
+        window.location.href='./ourteachers.html';
+        return false;
+
+      }
+      function gotosecondyearpage() {
+        window.location.href='secondyear/secondyear.html';
+      return false;
+      }
+      function gotothirdyearpage() {
+        window.location.href='thirdyear/thirdyear.html';
+      return false;
+      }
+      function gotofourthyearpage() {
+        window.location.href='fourthyear/fourthyear.html';
+      return false;
+      }
+
+      function gotocontactus() {
+        window.location.href= "./contactus.html";
+        return false;
+      }
+      function gotohome() {
+        window.location.href = "./home.html";
+        return false;
+      }
+      function gotoaboutus() {
+        window.location.href= "./aboutus.html";
+        return false;
+      }
+
+
+    var words = ["Video links",
+          "Previous Year papers",
+          "Other study materials",'Time Table','Syllabus'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+    </script>
+  </body>
+</html>
